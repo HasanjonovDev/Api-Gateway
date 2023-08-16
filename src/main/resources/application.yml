@@ -21,9 +21,17 @@ spring:
           predicates:
             - Path=/doctor/**
         - id: HYBRID-BOOKING-SERVICE
-          uri: lb://HYBRID_BOOKING-SERVICE
+          uri: lb://HYBRID-BOOKING-SERVICE
           predicates:
             - Path=/hybrid-booking/**
+        - id: MEDICAL-HISTORY-SERVICE
+          uri: lb://MEDICAL-HISTORY-SERVICE
+          predicates:
+            - Path=/medical-history/**
+        - id: HOSPITAL-SERVICE
+          uri: lb://HOSPITAL-SERVICE
+          predicates:
+            - Path=/hospital/**
 
 
 eureka:
