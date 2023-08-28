@@ -16,10 +16,6 @@ spring:
           uri: lb://NOTIFICATION-SERVICE
           predicates:
             - Path=/notification/**
-        - id: DOCTOR-SERVICE
-          uri: lb://DOCTOR-SERVICE
-          predicates:
-            - Path=/doctor/**
         - id: HYBRID-BOOKING-SERVICE
           uri: lb://HYBRID-BOOKING-SERVICE
           predicates:
