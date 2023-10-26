@@ -33,6 +33,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultUrl: ${EUREKA_URI:https://docs.diordev.me:8761/eureka/}
+      defaultUrl: ${EUREKA_URI:http://docs.diordev.me:8761/eureka/}
     instance:
       preferIpAddress: true
