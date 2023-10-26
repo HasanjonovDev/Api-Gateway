@@ -29,7 +29,6 @@ spring:
           predicates:
             - Path=/hospital/**
 
-
 eureka:
   client:
     service-url:
