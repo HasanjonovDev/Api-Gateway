@@ -28,11 +28,15 @@ spring:
           uri: lb://HOSPITAL-SERVICE
           predicates:
             - Path=/hospital/**
+        - id: MEDICAL-COLLEGE
+          uri: lb://HOSPITAL-SERVICE
+          predicates:
+            - Path=/user/**
 
 
 eureka:
   client:
     service-url:
-      defaultUrl: ${EUREKA_URI:https://docs.diordev.me:8761/eureka/}
+      defaultUrl: ${EUREKA_URI:http://164.92.206.217:8761/eureka/}
     instance:
       preferIpAddress: true
